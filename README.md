@@ -20,6 +20,9 @@ This portfolio website is built with React, Vite, and Tailwind CSS. The project 
 - Primary color: `#152e3a`
 - Secondary color: `#fbf1df`
 - Accent color: `#a64321`
+- #247aa3
+#f59e78
+#fbf2e0 
 
 ## Fonts
 
