@@ -34,3 +34,33 @@
 .font-ephesis {
   font-family: 'Ephesis', cursive;
 }
+
+/* Custom Scrollbar Styling */
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf2e0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c9a876 0%, #b89968 100%);
+  border-radius: 10px;
+  border: 2px solid #fbf2e0;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b89968 0%, #a67c52 100%);
+  box-shadow: 0 0 6px rgba(185, 153, 104, 0.3);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: #b89968 #fbf2e0;
+  scrollbar-width: thin;
+}
