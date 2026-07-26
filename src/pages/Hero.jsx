@@ -1,6 +1,6 @@
 import React from 'react'
 import Reveal from '../components/Reveal.jsx'
-import Button from '../components/button/button.jsx'
+import Button from '../components/button/Button.jsx'
 
 function Hero() {
   const handleViewWorkClick = (event) => {
