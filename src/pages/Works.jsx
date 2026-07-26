@@ -46,13 +46,6 @@ const workItems = [
     medium: 'Charcoal Portrait',
     category: 'Charcoal',
   },
-  {
-    id: 10,
-    src: '/charcoal/char4.jpeg',
-    name: 'Shaded Motion',
-    medium: 'Charcoal Drawing',
-    category: 'Charcoal',
-  },
 ]
 
 function Works() {
@@ -69,11 +62,13 @@ function Works() {
   const showLoadMore = filteredWorks.length > visibleCount
 
   return (
-    <section id="works" className="mx-auto max-w-[1200px] px-4 py-16 text-white">
-      <div className="rounded-[2rem] bg-[#0b1d26] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
-        <div className="flex flex-col gap-8 xl:flex-row xl:items-center xl:justify-between">
+    <section id="works" className="mx-auto max-w-[1300px] px-4 py-16 text-white font-poppins sm:px-6 lg:px-8">
+      <div className="relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-[#0b1d26] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.15)] sm:p-10">
+        <div className="absolute -right-10 top-6 h-36 w-36 rounded-full border border-[#ffb366]/20 bg-[#ffb366]/10"></div>
+        <div className="absolute bottom-6 left-4 h-24 w-24 rounded-full border border-white/10 bg-white/5"></div>
+        <div className="relative z-10 flex flex-col gap-8 xl:flex-row xl:items-center xl:justify-between">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Selected Works <span className="text-[#ffb366]">✦</span></h2>
+            <h2 className="text-3xl font-bold tracking-tight font-libre text-white sm:text-4xl">Selected Works <span className="text-[#ffb366]">✦</span></h2>
             <p className="mt-4 max-w-xl text-sm text-slate-300 sm:text-base">
               Here are some of my recent design projects, filtered by category so you can explore the exact work style you want.
             </p>
@@ -96,7 +91,7 @@ function Works() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+        <div className="relative z-10 mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
           {visibleWorks.map((item, index) => (
             <Card
               key={item.id}

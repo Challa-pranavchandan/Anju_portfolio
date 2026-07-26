@@ -1,3 +1,4 @@
+import './App.css'
 import Footer from './components/footer/Footer.jsx'
 import Hero from './pages/Hero.jsx'
 import Ido from './pages/Ido.jsx'

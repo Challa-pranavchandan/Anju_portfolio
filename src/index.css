@@ -8,7 +8,24 @@
 
 :root {
   background-color: #fbf2e0;
+  color: #152e3a;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fbf2e0;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 .font-roboto {

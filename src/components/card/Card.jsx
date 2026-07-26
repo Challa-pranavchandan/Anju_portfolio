@@ -3,7 +3,7 @@ import React from 'react'
 function Card({ src, name, medium, style }) {
   return (
     <div
-      className="group floating-card overflow-hidden rounded-[2rem] bg-[#fbf1df] text-[#152e3a] shadow-[0_30px_80px_rgba(0,0,0,0.15)] transition hover:-translate-y-1 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]"
+      className="group floating-card overflow-hidden rounded-[2rem] bg-[#fbf1df] text-[#152e3a] shadow-[0_30px_80px_rgba(0,0,0,0.15)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_35px_70px_rgba(0,0,0,0.18)]"
       style={style}
     >
       <div className="overflow-hidden rounded-t-[2rem] bg-slate-100">

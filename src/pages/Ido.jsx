@@ -77,13 +77,15 @@ const categoryCards = [
 
 function Ido() {
   return (
-    <section className="mx-auto max-w-[1200px] px-4 py-16">
+    <section className="mx-auto max-w-[1300px] px-4 py-16 font-poppins sm:px-6 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] items-center">
         <div className="relative">
+          <div className="absolute -left-4 top-6 h-24 w-24 rounded-full border border-[#13404f]/15 bg-[#13404f]/10"></div>
+          <div className="absolute bottom-4 right-4 h-20 w-20 rounded-full border border-[#ffb366]/20 bg-[#ffb366]/10"></div>
           <img
             src="/anju.png"
             alt="Anju portrait"
-            className="w-full rounded-[2rem] border border-[#152e3a]/10 object-cover shadow-[0_35px_80px_rgba(0,0,0,0.18)]"
+            className="relative w-full rounded-[2rem] border border-[#152e3a]/10 object-cover shadow-[0_35px_80px_rgba(0,0,0,0.18)]"
           />
         </div>
 

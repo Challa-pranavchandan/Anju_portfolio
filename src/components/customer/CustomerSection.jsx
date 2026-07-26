@@ -6,7 +6,7 @@ function CustomerSection() {
     <section className="mx-auto max-w-[1200px] px-4 m-0 pb-16">
       <div className="overflow-hidden rounded-[2rem] bg-[#f7dfb7] p-6 sm:p-10 shadow-[0_35px_80px_rgba(0,0,0,0.16)]">
         <div className="mb-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#102028]">Wall of Smiles</h2>
+          <h2 className="text-3xl  font-libre sm:text-4xl font-bold text-[#102028]">Wall of Smiles</h2>
         </div>
         <div className="grid gap-8 lg:grid-cols-[1.7fr_1fr] lg:items-center">
           <div>
