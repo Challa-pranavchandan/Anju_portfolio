@@ -81,7 +81,7 @@ function CarouselReviews({ reviewsData }) {
 
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
-  const delay = 4500
+  const delay = 3500
 
   useEffect(() => {
     if (paused) return
