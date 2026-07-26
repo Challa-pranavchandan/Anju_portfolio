@@ -64,3 +64,17 @@
   scrollbar-color: #b89968 #fbf2e0;
   scrollbar-width: thin;
 }
+
+/* Card floating animation */
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-card {
+  animation: floatCard 6s ease-in-out infinite;
+}

@@ -93,7 +93,7 @@ function Ido() {
               What I Do <span className="text-[#ffb366]">✦</span>
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-600">
-              I offer online tuition and creative art services across multiple expressive mediums. Every category is crafted to help you learn, grow, or display beautiful artwork that reflects your unique style.
+              I offer online tuition  and creative art services across multiple expressive mediums. Every category is crafted to help you learn, grow, or display beautiful artwork that reflects your unique style.
             </p>
           </div>
 

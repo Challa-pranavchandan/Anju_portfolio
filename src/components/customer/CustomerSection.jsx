@@ -5,6 +5,9 @@ function CustomerSection() {
   return (
     <section className="mx-auto max-w-[1200px] px-4 m-0 pb-16">
       <div className="overflow-hidden rounded-[2rem] bg-[#f7dfb7] p-6 sm:p-10 shadow-[0_35px_80px_rgba(0,0,0,0.16)]">
+        <div className="mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#102028]">Wall of Smiles</h2>
+        </div>
         <div className="grid gap-8 lg:grid-cols-[1.7fr_1fr] lg:items-center">
           <div>
             {/* Carousel: accepts `reviewsData` prop or uses internal defaults */}
@@ -12,16 +15,16 @@ function CustomerSection() {
           </div>
 
           <div className="grid gap-3 sm:gap-4 grid-cols-3 sm:grid-cols-3 w-full">
-            <div className="rounded-[1.5rem] sm:rounded-[1.75rem]  p-3 sm:p-6 text-center ">
+            <div className="rounded-[1.5rem] sm:rounded-[1.75rem] flex flex-col items-center justify-center p-3 sm:p-6 text-center ">
               <p className="text-2xl sm:text-4xl font-bold text-[#102028]">30+</p>
               <p className="mt-2 sm:mt-3 text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.22em] text-[#102028]/75 leading-tight">Artworks</p>
             </div>
-            <div className="rounded-[1.5rem] sm:rounded-[1.75rem]  p-3 sm:p-6 text-center  align-center justify-center">
+            <div className="rounded-[1.5rem] sm:rounded-[1.75rem] flex flex-col items-center justify-center p-3 sm:p-6 text-center  align-center justify-center">
               <p className="text-2xl sm:text-4xl font-bold text-[#102028]">12+</p>
               <p className="mt-2 sm:mt-3 text-s sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.22em] text-[#102028]/75 leading-tight">Happy<br/>Clients</p>
             </div>
-            <div className="rounded-[1.5rem] sm:rounded-[1.75rem]   p-3 sm:p-6 text-center  ">
-              <p className="text-2xl sm:text-4xl font-bold text-[#102028]">5+</p>
+            <div className="rounded-[1.5rem] sm:rounded-[1.75rem]  flex flex-col items-center justify-center p-3 sm:p-6 text-center  ">
+              <p className="text-2xl sm:text-4xl font-bold text-[#102028]">2+</p>
               <p className="mt-2 sm:mt-3 text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.22em] text-[#102028]/75 leading-tight">Experience</p>
             </div>
           </div>
@@ -33,31 +36,11 @@ function CustomerSection() {
 
 function CarouselReviews({ reviewsData }) {
   const defaultReviews = reviewsData || [
-    {
-      photo: '/anju.png',
-      name: 'Daniel James',
-      title: 'Founder, Freshbite',
-      message:
-        '“Mariana is a rare mix of creativity, precision and joy to work with. The results speak for themselves!”',
-    },
-    {
-      photo: '/anju.png',
-      name: 'Aisha Khan',
-      title: 'Creative Director',
-      message: '“A joy to collaborate with — thoughtful and detail-oriented.”',
-    },
-    {
-      photo: '/anju.png',
-      name: 'Carlos M.',
-      title: 'Product Designer',
-      message: '“Delivered outstanding work on time and exceeded expectations.”',
-    },
-    {
-      photo: '/anju.png',
-      name: 'Lea R.',
-      title: 'Marketing Head',
-      message: '“Her designs elevated our brand and converted more users.”',
-    },
+    { photo: '/customers/cust1.jpeg', name: 'Customer 1' },
+    { photo: '/customers/cust2.jpeg', name: 'Customer 2' },
+    { photo: '/customers/cust3.png', name: 'Customer 3' },
+    { photo: '/customers/cust4.png', name: 'Customer 4' },
+    { photo: '/customers/cust5.png', name: 'Customer 5' },
   ]
 
   const [index, setIndex] = useState(0)
@@ -75,7 +58,7 @@ function CarouselReviews({ reviewsData }) {
   return (
     <div>
       <div
-        className="relative w-full h-[260px] sm:h-[300px] overflow-hidden rounded-[1.5rem]"
+        className="relative w-full h-[420px] sm:h-[520px] overflow-hidden rounded-[1.5rem]"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >

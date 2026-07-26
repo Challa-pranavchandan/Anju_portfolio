@@ -89,9 +89,11 @@ npm run lint
 
 - `package.json` — project dependencies, scripts, and metadata
 - `vite.config.js` — Vite configuration with React and Tailwind plugins
-- `src/index.css` — font imports, theme colors, and Tailwind base styles
+- `src/index.css` — font imports, theme colors, Tailwind base styles, and custom scrollbar design
 - `src/pages/Works.jsx` — category filter logic and project card rendering
+- `src/pages/Hero.jsx` — hero section layout with introduction and buttons
 - `src/components/card/Card.jsx` — card layout for featured work items
+- `src/components/customer/CustomerSection.jsx` — customer reviews carousel and stats metrics
 - `src/components/footer/Footer.jsx` — responsive footer design and contact links
 
 ## Design Tokens
@@ -110,16 +112,32 @@ npm run lint
 
 ## Current Status
 
-The portfolio is currently in active development. Core UI elements and responsive behavior have been implemented, and the focus is on refining the work showcase and completing the remaining page sections.
+The portfolio is actively maintained and fully functional. Key sections include:
+- **Hero Section**: Introduction with dynamic background effects and call-to-action buttons
+- **Works Section**: Project showcase with category-based filtering
+- **Customer Section**: Automated carousel with customer testimonials and portfolio metrics
+- **Skills Section**: Feature cards highlighting services and expertise
+- **Footer**: Contact information and social media links
+- **Responsive Design**: Optimized for all screen sizes with mobile-first approach
+- **Custom Styling**: Integrated custom scrollbar design that matches the elegant aesthetic
+
+## Recent Improvements
+
+- Implemented custom scrollbar styling with warm earth tones matching design palette
+- Enhanced mobile responsiveness for stats cards with adaptive padding and font sizes
+- Added customer review carousel with automatic rotation and hover pause
+- Optimized layout for seamless experience across all breakpoints
 
 ## Future Improvements
 
-- Add more project entries and unique project imagery
-- Implement smooth scroll navigation and page anchors
-- Add a contact form or email link for direct inquiries
-- Create a dedicated project detail overlay or modal
-- Improve accessibility and keyboard navigation
+- Expand project gallery with additional artwork samples
+- Add smooth scroll navigation and page anchors
+- Implement contact form with email integration
+- Create project detail modals for in-depth information
+- Add smooth page transitions and animations
+- Implement dark mode variant
+- Add blog section for art tutorials and insights
 
 ## Notes
 
-The project uses Tailwind CSS with a custom color palette and font family utilities. The Works section now supports category filtering and displays project cards with hover animation and consistent spacing.
+The project uses Tailwind CSS with a custom color palette and font family utilities. The design emphasizes elegance and simplicity, featuring warm earth tones (#fbf2e0, #f7dfb7, #fbf1df) throughout. All components maintain consistent spacing, shadows, and hover effects for a polished user experience. The Works section supports category filtering, and the Customer Section provides social proof through testimonials and metrics.

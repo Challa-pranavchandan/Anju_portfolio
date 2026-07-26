@@ -2,6 +2,29 @@ import React from 'react'
 import Button from '../components/button/button.jsx'
 
 function Hero() {
+  const handleViewWorkClick = (event) => {
+    event.preventDefault()
+    document.getElementById('works')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  const handleContactClick = (event) => {
+    event.preventDefault()
+
+    const instagramAppUrl = 'instagram://user?username=livin_in_the_art'
+    const instagramWebUrl = 'https://www.instagram.com/livin_in_the_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+
+    const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)
+
+    if (isMobile) {
+      window.location.href = instagramAppUrl
+      window.setTimeout(() => {
+        window.open(instagramWebUrl, '_blank', 'noopener,noreferrer')
+      }, 800)
+    } else {
+      window.open(instagramWebUrl, '_blank', 'noopener,noreferrer')
+    }
+  }
+
   return (
     <section className='relative overflow-hidden bg-[#fbf2e0] min-h-screen'>
       <div className='absolute right-0 top-24 h-40 w-40 rounded-full bg-[#13404f]/20 blur-2xl'></div>
@@ -13,8 +36,8 @@ function Hero() {
           <span className='text-3xl lg:text-[2.5rem] font-semibold font-caveat text-[#f59e78]'>Artist & Art Tutor</span>
           <p className='max-w-xl text-base lg:text-lg leading-8 text-[#1f3f55] font-poppins'>Creating timeless fine art<br/>Inspiring artists through thoughtful teaching<br/>One brushstroke, one story, one legacy.</p>
           <div className='mt-8 flex flex-wrap gap-4'>
-            <Button name='View Work' variant='primary' />
-            <Button name='Contact Me' variant='secondary' />
+            <Button name='View Work' variant='primary' href='#works' onClick={handleViewWorkClick} />
+            <Button name='Contact Me' variant='secondary' href='https://www.instagram.com/livin_in_the_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' onClick={handleContactClick} external />
           </div>
         </div>
 
